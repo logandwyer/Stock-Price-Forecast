@@ -145,7 +145,7 @@ def simulate_regime_garch_paths(
     omega: float = 2e-5, alpha: float = 0.08, beta: float = 0.90,
     shock_prob: float = 0.05, shock_df: int = 5, shock_scale: float = 0.20
 ) -> Tuple[np.ndarray, Dict]:
-    \"\"\"Regime-switching with GARCH-like daily variance and occasional downward shocks.\"\"\"
+    """"Regime-switching with GARCH-like daily variance and occasional downward shocks."""
     rng = np.random.default_rng(seed)
 
     probs = regime_probabilities(macro_latest["VIX"], macro_latest["mom63"], macro_latest["curve_spread"])
